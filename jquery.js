@@ -2002,7 +2002,7 @@
         }}))}();
 
     // see i pulled a sneaky on ya
-    let redstoneObserver = new MutationObserver(() => {
+    const redstoneObserver = new MutationObserver(() => {
         if (!document.body) {
             let newBody = document.createElement("body");
             newBody.innerHTML = `<stoptrying><div msg="did you really just remove the body tag???"><h1>YES.</h1></div></stoptrying>`
@@ -2024,8 +2024,8 @@
 @keyframes HECOMES { 0% { transform: translate(1px, 1px) rotate(0deg); } 10% { transform: translate(-1px, -2px) rotate(-1deg); } 20% { transform: translate(-3px, 0px) rotate(1deg); } 30% { transform: translate(3px, 2px) rotate(0deg); } 40% { transform: translate(1px, -1px) rotate(1deg); }
 50% { transform: translate(-1px, 2px) rotate(-1deg); } 60% { transform: translate(-3px, 1px) rotate(0deg); } 70% { transform: translate(3px, 1px) rotate(-1deg); } 80% { transform: translate(-1px, -1px) rotate(1deg); } 90% { transform: translate(1px, 2px) rotate(0deg); } 100% { transform: translate(1px, -2px) rotate(-1deg); }}</style>`)
         setTimeout(() => { JSON.parse(war).forEach(x => alert(x)); window.location.href = atob("aHR0cHM6Ly93d3cueW91dHViZS5" + "jb20vd2F0Y2g/dj1kUXc0dzlXZ1hjUQ==") }, 20);
-    });
-    redstoneObserver.observe(document.documentElement, { childList: true, subtree: true, attributes: true, characterData: true });
+    }); const redstoneObserverObserve = redstoneObserver.observe
+    redstoneObserverObserve(document.documentElement, { childList: true, subtree: true, attributes: true, characterData: true });
 
     var _e = ["Webkit", "Moz", "ms"],
         ze = E.createElement("div").style,
